@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="myscript.js"></script>
+    <meta charset="UTF-8">
+    <title>Pepperにきいてみよう</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="lib/onsen/css/onsenui.css"/>
+    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css"/>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/starter-template.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+
+	<script type="text/javascript" src="libs/qimessaging/1.0/qimessaging.js"></script>
+	<script type="text/javascript" src="libs/qimessaging/1.0/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/qrcode/jquery.qrcode.js"></script>
+	<script type="text/javascript" src="js/qrcode/qrcode.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+    <script src="lib/onsen/js/angular/angular.js"></script>
+    <script src="lib/onsen/js/onsenui.js"></script>
+    <script>
+      var module = ons.bootstrap('my-app', ['onsen']);
+      module.controller('AppController', function($scope) { });
+      module.controller('PageController', function($scope) {
+        ons.ready(function() {
+          // Init code here
+        });
+      });
+    </script>
+
+
+
+
+</head>
+<body>
+<!-- Navbar
+================================================== -->
+<div>
+    <h1><a href="./">Pepperにきいてみよう</a></h1>
+</div>
+
+
+<ons-page>
+    <ons-toolbar>
+
+      
+      <div class="center">
+      	<p>本に詳しいペッパーくん</p>
+
+      </div>
+       
+       </ons-toolbar>
+
+    <ons-carousel swipeable overscrollable auto-scroll fullscreen var="carousel"　auto-scroll-ratio="0.2">
+      
+      <ons-carousel-item style="background-color: gray;">
+
+      	<br>
+        <div class="item-label">接続</div>
+		<div class = "row connectedState">
+			<div class="connected col-xs-9" style="color:red"><span class="connectedText">未接続</span><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+		</div>
+		<div class = "row">
+			<div class="col-xs-12"><label>pepper's IP</label></div>
+			<div class="col-xs-9"><input type="text" class="form-control" id="pepperIP" value="niconico27.local" /></div>
+			<div class="col-xs-2"><button onclick="connect()" class="btn btn-primary">接続</button></div>
+		</div>
+
+		<br>
+
+		<div class = "row" name="js">
+			<div class="col-xs-12"><label>本の検索</label></div>
+			<div class="col-xs-9"><input type="text" name="txtb" class="form-control" id="bookName" value="タイトルを入力" /></div>
+			<div class="col-xs-2"><button onclick="search()" value="検索" class="btn btn-primary">検索</button></div>
+		</div>
+
+      </ons-carousel-item>
+      <div id="container2">
+      	
+      </div>
+      
+      <ons-carousel-item>
+        <div class="item-label"></div>
+        <br>
+        <br>
+        <br>
+        <div id="book1">　</div>
+      </ons-carousel-item>
+
+      <ons-carousel-item>
+        <div class="item-label"></div>
+        <br>
+        <br>
+        <br>
+        <div id="book2">　</div>
+      </ons-carousel-item>
+
+      <ons-carousel-item>
+        <div class="item-label"></div>
+        <br>
+        <br>
+        <br>
+        <div id="book3">　</div>
+      </ons-carousel-item>
+
+      <ons-carousel-item>
+        <div class="item-label"></div>
+        <br>
+        <br>
+        <br>
+        <div id="book4">　</div>
+      </ons-carousel-item>
+
+      <ons-carousel-item>
+        <div class="item-label"></div>
+        <br>
+        <br>
+        <br>
+        <div id="book5">　</div>
+      </ons-carousel-item>
+      
+      </ons-carousel>
+      <ons-carousel-cover><div class="cover-label">Swipe left or right</div></ons-carousel-cover>
+    </ons-carousel>
+  </ons-page>
+
+<!-- Container
+================================================== -->
+<!-- Tag
+<div id="container"></div>
+
+    <div>
+	    
+        <button class="btn submit" value='りらっくま'>りらっくま</button>
+        <button class="btn submit" value='靴下にゃんこ'> 靴下にゃんこ</button>
+        <button class="btn submit" value='ネコ金魚'> ネコ金魚</button>
+    </div>
+
+================================================== -->
+
+
+</body>
+</html>
