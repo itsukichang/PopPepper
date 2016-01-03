@@ -14,11 +14,11 @@ var itemDateArray;
 var itemCount;
 
 var rakutenURL = 'https://app.rakuten.co.jp/services/api/BooksBook/Search/20130522';
-var rakutenID = '1014089941623070202';
+var rakutenID = '00000000000000';
 var rakutenHits = '5';
 
 var emotionJudgURL = 'https://lr.capio.jp/webapis/iminos/synana_k/1_1/';
-var emotionJudgID = '94Hq6C3Pgitv8EqY';
+var emotionJudgID = 'XXXXXXXXXXXXX';
 
 var negaposhiArray;
 
